@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/scss/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Advanced Search</title>
+</head>
+<body>
+    <header class="header__advanced">
+        <div>
+            <img class="header__logo" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="googlelogo">
+        </div>
+        <div class="header__links">
+            <a href="index.html">Home</a>
+        </div>
+    </header>
+
+    <div class="advanced">
+        
+        <div class="advanced__heading hide-for-tablet">
+            Advanced Search
+        </div>
+
+        <div class="advanced__border"></div>
+
+        <div class="advanced__container">
+            
+            <form action="https://google.com/search">
+
+                <div class="advanced__grid">
+                    <p class="advanced__searchtitle">Find pages with...</p>
+                    <div>&NonBreakingSpace;</div>
+                    <p class="hide-for-tablet advanced__searchdesc">To do this in the search box.</p>
+                    
+                    <label class="advanced__label" for="all">all these words:</label>
+                    <div class="advanced__inputdiv">
+                        <input name="as_q" id="all" type="text">
+                    </div>
+                    <div class="advanced__advice hide-for-tablet">
+                        Type the important words: <span class="advanced__advicecode">tri-colour rat terrier</span>
+                    </div>
+
+                    <label class="advanced__label" for="exact">this exact word or phrase:</label>
+                    <div class="advanced__inputdiv">
+                        <input name="as_epq" id="exact" type="text">
+                    </div>
+                    <div class="advanced__advice hide-for-tablet">
+                        Put exact words in quotes: <span class="advanced__advicecode">"rat terrier"</span>
+                    </div>
+
+                    <label class="advanced__label" for="any">any of these words:</label>
+                    <div class="advanced__inputdiv">
+                        <input name="as_oq" id="any" type="text">
+                    </div>
+                    <div class="advanced__advice hide-for-tablet">
+                        Type <span class="advanced__advicecode">OR</span> between all the words you want: <span class="advanced__advicecode">miniature OR standard</span>
+                    </div>
+
+                    <label class="advanced__label" for="any">none of these words:</label>
+                    <div class="advanced__inputdiv">
+                        <input name="as_eq" id="any" type="text">
+                    </div>
+                    <div class="advanced__advice hide-for-tablet">
+                        Put a minus sign just before words that you don't want: <span class="advanced__advicecode">-rodent, -"Jack Russell"</span>
+                    </div>
+
+                    <label class="advanced__label" for="numbers">numbers ranging from:</label>
+                    <div class="advanced__numberrange">
+                        <div class="advanced__inputdiv" style="width: 100%;">
+                            <input name="as_nlo" id="numbers" type="text">
+                        </div>
+                        <label class="advanced__label" for="numbers_2" id="to">to</label>
+                        <div class="advanced__inputdiv" style="width: 100%;">
+                            <input name="as_nhi" id="numbers_2" type="text">
+                        </div>
+                    </div>
+                    <div class="advanced__advice hide-for-tablet">
+                    Put two full stops between the numbers and add a unit of measurement: <span class="advanced__advicecode">10..35 kg, £300..£500, 2010..2011</span>
+                    </div>
+
+                    <button type="submit" class="advanced__button">Advanced Search</button>
+                </div>
+
+            </form>
+
+        </div>
+        
+        <div class="main__footer">
+            United Kingdom
+        </div>
+        
+    </div>
+</body>
+</html>

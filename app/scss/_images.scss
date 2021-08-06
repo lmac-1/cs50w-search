@@ -1,0 +1,73 @@
+.images {
+
+    &__logo {
+        height: 4.5rem;
+        display: block;
+        position:relative;
+        margin: 0 auto;
+        background: url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png);
+        background-repeat: no-repeat;
+        background-size:10rem;
+        background-position-y: 0.5rem;
+
+        @include breakpoint-up(medium) {
+            background: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"), no-repeat;
+            background-size: 17rem 5.75rem;
+            height: 5.75rem;
+            width: 17rem; 
+        }
+    }
+        
+    &__logotext {
+        position: absolute;
+        left: 7.875rem;
+        top: 3.25rem;
+        color: #4285f4;
+        white-space: nowrap;
+        font-size: 0.6875rem;
+
+        @include breakpoint-up(medium) {
+        left: 13.44rem;
+        top: 4.75rem;
+        font-size: 1rem;
+        }
+    }
+
+    &__logocontainer {
+        
+
+        @include breakpoint-down(medium) {
+            width: 10rem;
+            margin: 2.25rem auto 1.125rem;
+        }
+
+        @include breakpoint-up(medium) {
+            padding-top: 5.9375rem;
+        }
+    }
+
+    &__searchbutton {
+        height: 2.75rem;
+        width: 2.75rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        line-height: 1.5rem;
+        
+
+        @include breakpoint-up(medium) {
+            margin-left: 0.875rem;
+            margin-right: 0.875rem;
+        }
+    }
+}
+
+.blueicon {
+    fill: #4285f4;
+}
+
+.imagesearch {
+    @include breakpoint-up(medium) {
+        width: 33.375rem;
+    }
+}

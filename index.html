@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/scss/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Google</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__links">
+            <a href="images.html">Images</a><a href="advanced.html">Advanced</a>
+        </div>
+    </header>
+
+    <section class="main">
+        
+        <div class="main__logocontainer">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+
+        <div class="main__form">
+            
+            <form action="https://google.com/search">
+                
+                <div class="main__form__searchbar">
+                    <div class="main__form__searchiconbox">
+                        <svg class="main__form__searchicon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                        </svg>
+                    </div>
+                    
+                    <input class="main__form__searchinput" name="q" type="text">
+                </div>
+
+                <div class="main__form__buttons">
+                    <input name="btnK" class="main__form__searchbutton" type="submit" value="Google Search">
+                    <input name="btnI" class="main__form__searchbutton" type="submit" value="I'm Feeling Lucky">
+                </div>
+
+                <input name="iflsig" type="hidden" value="AINFCbYAAAAAYMy-m2O58nZDXugnB6XNECCZW0PGlyeL">
+
+            </form>
+
+        </div>
+        
+        <div class="main__footer">
+            United Kingdom
+        </div>
+
+    </section>
+</body>
+</html>

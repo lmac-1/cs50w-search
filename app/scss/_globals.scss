@@ -1,0 +1,38 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+ *, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(small){
+        display: none;
+    }
+}
+
+.hide-for-tablet {
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large){
+        display:  none;
+    }
+}
