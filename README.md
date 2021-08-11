@@ -1,0 +1,2 @@
+# Search
+A front-end for Google Search, Google Image Search, and Google Advanced Search built using HTML, CSS and SCSS. This was Project0 in [CS50W 2021](https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript)
